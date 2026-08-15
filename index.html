@@ -4,12 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Resume Jatudach Kh.</title>
+<script>
+  var EXEC = "https://script.google.com/macros/s/AKfycbxAT-i-d_EhqzlKovwu96BOcsrDro4mtm16p9tRmGxwDNk7ZnqS1V1kd7V2b0AoFviI/exec";
+  var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  if (isMobile) location.replace(EXEC);
+</script>
 <style>
   html,body{margin:0;padding:0;height:100%;overflow:hidden;background:#0a1f3d}
   iframe{border:0;display:block;width:100%;height:100%}
 </style>
 </head>
 <body>
-<iframe src="https://script.google.com/macros/s/AKfycbxAT-i-d_EhqzlKovwu96BOcsrDro4mtm16p9tRmGxwDNk7ZnqS1V1kd7V2b0AoFviI/exec" allowfullscreen></iframe>
+<iframe id="fr" allowfullscreen></iframe>
+<script>
+  if (!isMobile) document.getElementById('fr').src = EXEC;
+</script>
 </body>
 </html>
